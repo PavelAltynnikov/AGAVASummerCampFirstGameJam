@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 1816664491}
   - component: {fileID: 1816664490}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 1880749334}
   - component: {fileID: 1880749339}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,5 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1fcbb1157645139a6f60bc343c34d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 5
+  _rb: {fileID: 1880749334}
   _speed: 5
   _rb: {fileID: 1880749334}

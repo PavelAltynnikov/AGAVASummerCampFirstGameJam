@@ -2,11 +2,6 @@
 
 public class DrunkPlayer : Player
 {
-    [SerializeField] private float _speed;
-    [SerializeField] private Rigidbody _rb;
-
-    private Vector3 _direction;
-
     private void FixedUpdate()
     {
         Move();

@@ -3,10 +3,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float _speed;
-    [SerializeField] private Rigidbody _rb;
+    [SerializeField] protected float _speed;
+    [SerializeField] protected Rigidbody _rb;
 
-    private Vector3 _direction;
+    protected Vector3 _direction;
 
     private void FixedUpdate()
     {
