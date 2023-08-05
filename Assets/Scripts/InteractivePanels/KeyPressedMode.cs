@@ -2,5 +2,6 @@
 {
     Increase,
     Decrease,
-    Enter
+    Enter,
+    None
 }

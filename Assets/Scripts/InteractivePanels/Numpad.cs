@@ -54,7 +54,7 @@ public class Numpad : MonoBehaviour
                 CodeNotMatched?.Invoke();
             }
 
-            _displayText = string.Empty;
+            ChangeDisplayText(string.Empty, KeyPressedMode.None);
             return;
         }
 
@@ -86,6 +86,9 @@ public class Numpad : MonoBehaviour
                 break;
             case KeyPressedMode.Decrease:
                 _displayText = _displayText[..^1];
+                break;
+            case KeyPressedMode.None:
+                _displayText = code;
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(displayChangeMode), displayChangeMode, null);
