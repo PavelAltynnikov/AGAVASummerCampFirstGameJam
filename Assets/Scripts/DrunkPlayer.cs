@@ -1,7 +1,6 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-public class Player : MonoBehaviour
+public class DrunkPlayer : Player
 {
     [SerializeField] private float _speed;
     [SerializeField] private Rigidbody _rb;
@@ -20,8 +19,26 @@ public class Player : MonoBehaviour
             Debug.LogError("Ошибка перемещения. Скорость игрока должна быть больше 0");
         }
 
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        float horizontalInput = 0;
+        float verticalInput = 0;
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            verticalInput = 1;
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            verticalInput = -1;
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            horizontalInput = -1;
+        }
+        else if (Input.GetKey(KeyCode.Z))
+        {
+            horizontalInput = 1;
+        }
 
         _direction.x = horizontalInput * _speed;
         _direction.z = verticalInput * _speed;
