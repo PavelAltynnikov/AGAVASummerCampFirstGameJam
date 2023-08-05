@@ -213,14 +213,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183152667}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 1.671, z: 4.838}
+  m_LocalRotation: {x: -0, y: 0.70058763, z: -0, w: 0.7135664}
+  m_LocalPosition: {x: 4.91, y: 1.671, z: 0.27}
   m_LocalScale: {x: 3.4465, y: 3.4426, z: 0.23686473}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 88.948, z: 0}
 --- !u!114 &183152672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5af23dfbfbc98d4fbfffcff02fb6709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextSceneNumber: 1
+  _nextSceneNumber: 0
 --- !u!1 &459397786
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 1816664491}
   - component: {fileID: 1816664490}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 1880749334}
   - component: {fileID: 1880749339}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -635,8 +635,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1880749333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c1fcbb1157645139a6f60bc343c34d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ecd47db855f8d846829dd1f38804d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _speed: 10
   _rb: {fileID: 1880749334}

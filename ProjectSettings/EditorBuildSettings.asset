@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Tests/FirstTestsSceneForExit 1.unity
+    path: Assets/Scenes/Tests/FirstTestsSceneForExit.unity
     guid: ef96e6a5df2c03d40aadd57d41fe07c7
   - enabled: 1
-    path: Assets/Scenes/Tests/SecondTestsSceneForExit 2.unity
+    path: Assets/Scenes/Tests/SecondTestsSceneForExit.unity
     guid: 08e9629d42d91504ea569797ec1a1e61
   m_configObjects: {}
