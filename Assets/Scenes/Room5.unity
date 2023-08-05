@@ -1148,6 +1148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1300068697}
   - component: {fileID: 1300068698}
+  - component: {fileID: 1300068699}
   m_Layer: 0
   m_Name: RisingThread
   m_TagString: Untagged
@@ -1183,6 +1184,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.048458, y: 0.42251587, z: 2.0265317}
   m_Center: {x: 1.2597866, y: 0.28874207, z: 0.51326585}
+--- !u!114 &1300068699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300068696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca7ae57a2dda3142a0cc361cc84d03c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpForce: 1
 --- !u!1001 &1410676024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2113,11 +2127,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6405110773846476922, guid: ac25aaef877bd7e479217b1da5109dbe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.28
+      value: 18.29
       objectReference: {fileID: 0}
     - target: {fileID: 6405110773846476922, guid: ac25aaef877bd7e479217b1da5109dbe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.29
+      value: 15.57
       objectReference: {fileID: 0}
     - target: {fileID: 6405110773846476922, guid: ac25aaef877bd7e479217b1da5109dbe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2153,11 +2167,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8799937196922482072, guid: ac25aaef877bd7e479217b1da5109dbe, type: 3}
       propertyPath: _speed
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8799937196922482072, guid: ac25aaef877bd7e479217b1da5109dbe, type: 3}
       propertyPath: _jumpForce
-      value: 200
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac25aaef877bd7e479217b1da5109dbe, type: 3}
