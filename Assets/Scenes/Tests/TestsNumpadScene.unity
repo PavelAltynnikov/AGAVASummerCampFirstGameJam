@@ -499,6 +499,7 @@ GameObject:
   - component: {fileID: 819064656}
   - component: {fileID: 819064655}
   - component: {fileID: 819064654}
+  - component: {fileID: 819064658}
   m_Layer: 0
   m_Name: DoorPanel
   m_TagString: Untagged
@@ -584,6 +585,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &819064658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819064653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151172a6818621d41b9d78d585b17346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _numpad: {fileID: 2078568386}
 --- !u!114 &1139645890 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4643424840208331503, guid: 0e712d2c96328a642acf020e8c8b76c8, type: 3}
