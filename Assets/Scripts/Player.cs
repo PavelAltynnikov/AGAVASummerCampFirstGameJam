@@ -5,10 +5,19 @@ public class Player : MonoBehaviour
 {
     [SerializeField] protected float _speed;
     [SerializeField] protected float _jumpForce;
+    [SerializeField] protected float _sensitivity;
     [SerializeField] protected Rigidbody _rb;
 
     protected bool _isOnGround = false;
     protected Vector3 _direction;
+
+    private void Awake()
+    {
+        if (_sensitivity == 0)
+        {
+            _sensitivity = 1;
+        }
+    }
 
     private void Update()
     {
@@ -16,6 +25,8 @@ public class Player : MonoBehaviour
         {
             TryToJump();
         }
+
+        RotatePlayer();
     }
 
     private void FixedUpdate()
@@ -57,7 +68,12 @@ public class Player : MonoBehaviour
         _direction.z = verticalInput * _speed;
         _direction.y = _rb.velocity.y;
 
-        _rb.velocity = _direction;
+        _rb.velocity = transform.TransformDirection(_direction);
+    }
+
+    private void RotatePlayer()
+    {
+        transform.Rotate(Vector3.up * (Input.GetAxis("Mouse X") * _sensitivity), Space.Self);
     }
 
     private void OnCollisionEnter(Collision other)
