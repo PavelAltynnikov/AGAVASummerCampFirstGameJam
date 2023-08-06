@@ -396,11 +396,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1692553263 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 5238679661677252133, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
-  m_PrefabInstance: {fileID: 6091984157578222369}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1816664489
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,10 +505,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5238679661677252133, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
-      propertyPath: m_Drag
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6081918697262719322, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -524,7 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6081918697262719322, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.41
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 6081918697262719322, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -557,22 +548,6 @@ PrefabInstance:
     - target: {fileID: 6081918697262719322, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555087215285456891, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
-      propertyPath: _rb
-      value: 
-      objectReference: {fileID: 1692553263}
-    - target: {fileID: 7555087215285456891, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
-      propertyPath: _speed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555087215285456891, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
-      propertyPath: _groundDrag
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555087215285456891, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
-      propertyPath: _sensitivity
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
