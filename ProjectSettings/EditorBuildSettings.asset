@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tests/TestsNumpadScene.unity
     guid: 996e7dd3336936146960f4a918c94953
+  - enabled: 1
+    path: Assets/Scenes/Room5.unity
+    guid: 7f90a04d8870e4d4ca36eac56316dfac
   m_configObjects: {}
