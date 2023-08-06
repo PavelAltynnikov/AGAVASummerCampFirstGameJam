@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Multiplier : MonoBehaviour
@@ -8,7 +6,7 @@ public class Multiplier : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent(typeof(Player)))
+        if (other.GetComponentInParent(typeof(Player)))
         {
             if (_scale <= 0)
             {
