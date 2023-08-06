@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5af23dfbfbc98d4fbfffcff02fb6709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextSceneNumber: 1
+  _nextSceneName: TestsNumpadScene
 --- !u!1001 &191996520
 PrefabInstance:
   m_ObjectHideFlags: 0
