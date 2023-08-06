@@ -1950,7 +1950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5af23dfbfbc98d4fbfffcff02fb6709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextSceneName: 
+  _nextSceneName: Room6
 --- !u!65 &321043317
 BoxCollider:
   m_ObjectHideFlags: 0
