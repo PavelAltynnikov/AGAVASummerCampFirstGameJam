@@ -47,10 +47,12 @@ public class Numpad : MonoBehaviour
         {
             if (string.Compare(_correctCode, _displayText) == 0)
             {
+                Debug.Log(_correctCode);
                 CodeMatched?.Invoke();
             }
             else
             {
+                Debug.Log(_correctCode);
                 CodeNotMatched?.Invoke();
             }
 

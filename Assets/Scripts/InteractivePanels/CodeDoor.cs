@@ -3,9 +3,12 @@ using UnityEngine;
 public class CodeDoor : MonoBehaviour
 {
     [SerializeField] private Numpad _numpad;
+    [SerializeField] private GameObject _portal;
+    [SerializeField] private Transform _door;
 
     private void OnEnable()
     {
+        Debug.Log("Enable");
         _numpad.CodeMatched += OpenDoor;
     }
 
@@ -16,6 +19,7 @@ public class CodeDoor : MonoBehaviour
 
     private void OpenDoor()
     {
-        gameObject.SetActive(false);
+        _portal.SetActive(true);
+        _door.Rotate(new Vector3(0, 50, 0));
     }
 }
