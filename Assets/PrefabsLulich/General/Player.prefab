@@ -200,10 +200,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ecd47db855f8d846829dd1f38804d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 30
   _jumpForce: 0.5
-  _sensitivity: 0
-  _rb: {fileID: 0}
+  _sensitivity: 0.5
+  _groundDrag: 5
+  _rb: {fileID: 5238679661677252133}
   _orientation: {fileID: 5956570819306601206}
 --- !u!1 &6091984159232988836
 GameObject:
