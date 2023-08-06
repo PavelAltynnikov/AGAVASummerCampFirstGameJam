@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5af23dfbfbc98d4fbfffcff02fb6709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextSceneNumber: 1
+  _nextSceneName: FirstTestsSceneForExit
 --- !u!1 &204020824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4643424838937162613, guid: 0e712d2c96328a642acf020e8c8b76c8, type: 3}
