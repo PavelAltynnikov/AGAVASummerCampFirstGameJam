@@ -6,6 +6,8 @@ public class Numpad : MonoBehaviour
     [SerializeField] private string _correctCode;
     [SerializeField] private Key[] _keys;
     [SerializeField] private Display _display;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _clip;
 
     private string _displayText = string.Empty;
 
@@ -77,6 +79,7 @@ public class Numpad : MonoBehaviour
         }
 
         ChangeDisplayText(e.KeyCode, e.KeyPressedMode);
+        _audioSource.PlayOneShot(_clip);
     }
 
     private void ChangeDisplayText(string code, KeyPressedMode displayChangeMode)
