@@ -7,7 +7,7 @@ public class Exit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent(typeof(Player)))
+        if (other.GetComponentInParent(typeof(Player)))
         {
             SceneManager.LoadScene(_nextSceneName);
         }
