@@ -2401,6 +2401,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7555087215285456891, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
+      propertyPath: _speed
+      value: 35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c73f6bd66ecd7894fb5b54f19aaf69c8, type: 3}
 --- !u!4 &1801982571 stripped
@@ -2726,8 +2730,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Easy Room
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0f447da7c6553a84da11129a71ad6872, type: 2}
+  m_sharedMaterial: {fileID: 5544392484934767281, guid: 0f447da7c6553a84da11129a71ad6872, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2758,8 +2762,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
