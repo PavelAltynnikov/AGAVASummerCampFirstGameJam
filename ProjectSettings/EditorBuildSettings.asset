@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Tests/SecondTestsSceneForExit.unity
     guid: 08e9629d42d91504ea569797ec1a1e61
   - enabled: 1
-    path: Assets/Scenes/room2 Sober Room.unity
+    path: Assets/Scenes/Room2.unity
     guid: 54d816160a42adb4a99d40451ed2cde8
   - enabled: 1
     path: Assets/Scenes/Room6.unity

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1863,7 +1863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 410528, guid: 5aa30891913dc934fa50d8fc19f4fde3, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 410528, guid: 5aa30891913dc934fa50d8fc19f4fde3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1950,7 +1950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5af23dfbfbc98d4fbfffcff02fb6709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextSceneName: room2 Sober Room
+  _nextSceneName: Room2
 --- !u!65 &321043317
 BoxCollider:
   m_ObjectHideFlags: 0
