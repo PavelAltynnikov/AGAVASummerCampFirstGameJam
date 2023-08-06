@@ -6,8 +6,12 @@ public class Player : MonoBehaviour
     [SerializeField] protected float _speed;
     [SerializeField] protected float _jumpForce;
     [SerializeField] protected float _sensitivity;
+    [SerializeField] protected float _groundDrag;
     [SerializeField] protected Rigidbody _rb;
+    [SerializeField] protected Transform _orientation;
 
+    protected float _horizontalInput;
+    protected float _verticalInput;
     protected bool _isOnGround = false;
     protected Vector3 _direction;
 
@@ -17,6 +21,14 @@ public class Player : MonoBehaviour
         {
             _sensitivity = 1;
         }
+
+        if (_groundDrag == 0)
+        {
+            _groundDrag = 1;
+        }
+
+        _rb ??= GetComponent<Rigidbody>();
+        _rb.freezeRotation = true;
     }
 
     private void Update()
@@ -26,17 +38,37 @@ public class Player : MonoBehaviour
             TryToJump();
         }
 
-        RotatePlayer();
+        MyInput();
+
+        if (_isOnGround)
+        {
+            _rb.drag = _groundDrag;
+        }
+        else
+        {
+            _rb.drag = 0;
+        }
     }
 
     private void FixedUpdate()
     {
-        Move();
+        MovePlayer();
+    }
+
+    private void MyInput()
+    {
+        _horizontalInput = Input.GetAxisRaw("Horizontal");
+        _verticalInput = Input.GetAxisRaw("Vertical");
+    }
+
+    private void MovePlayer()
+    {
+        _direction = _orientation.forward * _verticalInput + _orientation.right * _horizontalInput;
+        _rb.AddForce(_direction.normalized * _speed, ForceMode.Force);
     }
 
     protected void TryToJump()
     {
-        Debug.Log($"Пытаемся прыгнуть: {_isOnGround}");
         if (_jumpForce <= 0)
         {
             Debug.LogError("Ошибка прыжка. Сила прыжка должна быть больше 0");
@@ -49,39 +81,16 @@ public class Player : MonoBehaviour
 
         var velocity = new Vector3(0f, Mathf.Abs(Physics.gravity.y * _jumpForce),0f);
         _rb.velocity = velocity;
+
         _isOnGround = false;
-
-        Debug.Log($"Прыгнули: {_isOnGround}");
     }
 
-    private void Move()
-    {
-        if (_speed <= 0)
-        {
-            Debug.LogError("Ошибка перемещения. Скорость игрока должна быть больше 0");
-        }
-
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        _direction.x = horizontalInput * _speed;
-        _direction.z = verticalInput * _speed;
-        _direction.y = _rb.velocity.y;
-
-        _rb.velocity = transform.TransformDirection(_direction);
-    }
-
-    private void RotatePlayer()
-    {
-        transform.Rotate(Vector3.up * (Input.GetAxis("Mouse X") * _sensitivity), Space.Self);
-    }
 
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Floor"))
         {
             _isOnGround = true;
-            Debug.Log($"Пересеклись с полом: {_isOnGround}");
         }
     }
 }
