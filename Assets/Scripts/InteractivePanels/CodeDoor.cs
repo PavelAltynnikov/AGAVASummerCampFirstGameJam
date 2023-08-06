@@ -10,7 +10,6 @@ public class CodeDoor : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("Enable");
         _numpad.CodeMatched += OpenDoor;
     }
 

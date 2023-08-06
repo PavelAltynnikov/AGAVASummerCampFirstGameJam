@@ -3,6 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     public void StartNewGame()
     {
         SceneManager.LoadScene("Room1");
@@ -10,6 +16,10 @@ public class MainMenu : MonoBehaviour
 
     public void ExitGame()
     {
-        Application.Quit();
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
+        Application.Quit(); 
+        #endif
     }
 }
