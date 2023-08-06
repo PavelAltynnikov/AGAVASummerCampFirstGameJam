@@ -558,6 +558,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 141b9dd81110d0e4a99ea09fd94d420b, type: 3}
+--- !u!1001 &469268426
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6129005036353231609, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: df9ee6d93194b3a4391ebbbb17f8b8fe, type: 3}
+    - target: {fileID: 6129005037890982224, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_Name
+      value: AmbientMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2717674
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.8657913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.041979354
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129005037890982227, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e3544ea7399f3794687b45b21b62bfb0, type: 3}
 --- !u!1 &576705549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,6 +1570,10 @@ PrefabInstance:
     - target: {fileID: 101020, guid: a9801b496c0b22542bd354dbd33e894d, type: 3}
       propertyPath: m_Name
       value: SD_Prop_Sword_Rusty_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 101020, guid: a9801b496c0b22542bd354dbd33e894d, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 441350, guid: a9801b496c0b22542bd354dbd33e894d, type: 3}
       propertyPath: m_RootOrder
