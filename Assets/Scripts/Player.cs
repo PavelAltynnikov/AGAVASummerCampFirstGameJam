@@ -93,4 +93,12 @@ public class Player : MonoBehaviour
             _isOnGround = true;
         }
     }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Floor"))
+        {
+            _isOnGround = false;
+        }
+    }
 }
